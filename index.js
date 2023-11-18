@@ -1,6 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const { Circle, Square, Triangle, Polygon} = require('./main/lib/shapes')
+const { Circle, Square, Triangle} = require('./main/lib/shapes')
 const questions = require('./main/lib/questions')
 
 
@@ -17,7 +17,7 @@ const init = () => {
                             if (err) {
                                 console.error(err);
                             } else {
-                                console.log('Congratulations Square is created')
+                                console.log("Congratulations Square is created")
                             }
                         })
             }
